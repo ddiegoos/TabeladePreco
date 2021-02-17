@@ -1,0 +1,673 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+   <!--icone no navegador -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<link rel="stylesheet" href="node_modules/mdbootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
+<link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
+
+<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+  
+<title>Cadastrar</title>
+</head>
+  <body>
+
+  <nav class="navbar navbar-light bg-light">
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">
+        <form class="form-inline">
+          <input class="form-control mr-sm-6" type="search" placeholder="Search" aria-label="Search">
+          &nbsp;&nbsp;&nbsp;
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          &nbsp;&nbsp;&nbsp;
+
+        <button type="button" class="btn btn-default btn-sm"> 
+          <span class="glyphicon glyphicon-cog"></span> Configurações</button>
+      </form></li>
+      </ul>
+          
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+
+        <div class="dropdown">
+        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><span class="glyphicon glyphicon-th"></span></a></button>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#"> Menu</a>
+            <a class="dropdown-item" href="#"> Portal RH</a>
+            <a class="dropdown-item" href="#"> Supermercado</a>
+            <a class="dropdown-item" href="#"> Cadastrar Supermercado</a>
+            <a class="dropdown-item" href="#"> Cadastro de Produto</a>
+            <a class="dropdown-item" href="#"> Estoque de Produto</a>
+
+          </div>
+        </div>
+
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-alimentos" role="tab" aria-controls="pills-alimentos" aria-selected="false">Alimentos</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-acougue" role="tab" aria-controls="pills-contact" aria-selected="false">Açougue</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-bebidas" role="tab" aria-controls="pills-contact" aria-selected="false">Bebidas</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-feira" role="tab" aria-controls="pills-contact" aria-selected="false">Feira</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-limpeza" role="tab" aria-controls="pills-contact" aria-selected="false">Limpeza</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-perfumaria" role="tab" aria-controls="pills-contact" aria-selected="false">Perfumaria</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-mercearia" role="tab" aria-controls="pills-contact" aria-selected="false">Mercearia</a>
+          </li>
+
+      </ul>
+
+      
+    </div>
+  </nav>
+  <div class="container">
+
+  
+
+        
+
+        
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade" id="pills-alimentos" role="tabpanel" aria-labelledby="pills-alimentos-tab"> 
+            <p><H4>Filtro de Pesquisa </H4></p>  
+            <input class="form-control" id="myInput" type="text" placeholder="Search..">
+            <br>
+            <a href="#">
+              <span class="glyphicon glyphicon-plus"></span> Adicionar
+            </a> &nbsp;&nbsp;
+            <a href="#">
+              <span class="glyphicon glyphicon-minus"></span> Remover
+            </a> &nbsp;&nbsp;
+            <a href="#">
+              <span class="glyphicon glyphicon-pencil"></span> Editar
+            </a>
+             <br>
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Distribuidora</th>
+                  <th scope="col">Código do Produto</th>
+                  <th scope="col">Tipo de Produto</th>
+                  <th scope="col">Produto</th>
+                  <th scope="col">Preço</th>
+                  
+                </tr>
+              </thead>
+              <tbody id="myTable">
+                <tr>
+                  <td>AAAA</td>
+                  <th scope="row">098786</th>
+                  <td>Alimentos Basicos</td>
+                  <td>Arroz</td>
+                  <td>R$: 10,00</td>
+                </tr>
+                <tr>
+                  <td>BBBBB</td>
+                  <th scope="row">123456</th>
+                  <td>Alimentos Basicos</td>
+                  <td>Feijão</td>
+                  <td>R$: 9,00 </td>
+                </tr>
+                <tr>
+                  <td>CCCC</td>
+                  <th scope="row">876687</th>
+                  <td>Alimentos Basicos</td>
+                  <td>Leite</td>
+                  <td>RS: 14,00</td>
+                </tr>
+                <tr>
+                  <td>DDDDD</td>
+                  <th scope="row">244467</th>
+                  <td>Alimentos Basicos</td>
+                  <td>Macarrão</td>
+                  <td>R$: 12,00</td>
+                </tr>
+                <tr>
+                  <td>AAAA</td>
+                  <th scope="row">8dm373</th>
+                  <td>Alimentos Basicos</td>
+                  <td>Oléo</td>
+                  <td>R$: 12,00</td>
+                </tr>
+                <tr>
+                  <td>FFFFF</td>
+                  <th scope="row">346789</th>
+                  <td>Alimentos Basicos</td>
+                  <td>Café</td>
+                  <td>R$: 5,00</td>
+                </tr>
+              </tbody>
+              <tr>
+                <td>DDDDD</td>
+                <th scope="row">244467</th>
+                <td>Massa</td>
+                <td>Macarrão</td>
+                <td>R$: 12,00</td>
+              </tr>
+              <tr>
+                <td>ZZZZZ</td>
+                <th scope="row">8757HU</th>
+                <td>Conservas Enlatadas</td>
+                <td>Milho e Ervilha</td>
+                <td>R$: 7,00</td>
+              </tr>
+              <tr>
+                <td>HHHHH</td>
+                <th scope="row">8757HU</th>
+                <td>Tempeiros</td>
+                <td>Sal</td>
+                <td>R$: 10,00</td>
+              </tr>
+            </table>
+          </div>
+            
+          
+          <div class="tab-pane fade" id="pills-acougue" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <p><H4>Filtro de Pesquisa </H4></p>  
+            <input class="form-control" id="myInput" type="text" placeholder="Search..">
+            <br>
+            <a href="#">
+              <span class="glyphicon glyphicon-plus"></span> Adicionar
+            </a> &nbsp;&nbsp;
+            <a href="#">
+              <span class="glyphicon glyphicon-minus"></span> Remover
+            </a> &nbsp;&nbsp;
+            <a href="#">
+              <span class="glyphicon glyphicon-pencil"></span> Editar
+            </a>
+             <br>
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Distribuidora</th>
+                  <th scope="col">Código do Produto</th>
+                  <th scope="col">Tipo de Produto</th>
+                  <th scope="col">Produto</th>
+                  <th scope="col">Preço</th>
+                  
+                  
+                </tr>
+              </thead>
+              <tbody id="myTable">
+                <tr>
+                  <td>AAAA</td>
+                  <th scope="row">mdd732</th>
+                  <td>Carne Bovina</td>
+                  <td>Carne Moida</td>
+                  <td>R$: 20,00</td>
+                </tr>
+                <tr>
+                  <td>BBBBB</td>
+                  <th scope="row">8dhh82</th>
+                  <td>Peixaria</td>
+                  <td>Bacalhau</td>
+                  <td>R$: 25,00 </td>
+                </tr>
+                <tr>
+                  <td>CCCC</td>
+                  <th scope="row">ucsus</th>
+                  <td>Ave</td>
+                  <td>Peito de frango</td>
+                  <td>RS: 14,00</td>
+                </tr>
+                <tr>
+                  <td>DDDDD</td>
+                  <th scope="row">244467</th>
+                  <td>Carne Suina</td>
+                  <td>Bisteca</td>
+                  <td>R$: 22,00</td>
+                </tr>
+            </table>
+          </div>
+          <div class="tab-pane fade" id="pills-bebidas" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <p><H4>Filtro de Pesquisa </H4></p>  
+            <input class="form-control" id="myInput" type="text" placeholder="Search..">
+            <br>
+            <a href="#">
+              <span class="glyphicon glyphicon-plus"></span> Adicionar
+            </a> &nbsp;&nbsp;
+            <a href="#">
+              <span class="glyphicon glyphicon-minus"></span> Remover
+            </a> &nbsp;&nbsp;
+            <a href="#">
+              <span class="glyphicon glyphicon-pencil"></span> Editar
+            </a>
+             <br>
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Distribuidora</th>
+                  <th scope="col">Código do Produto</th>
+                  <th scope="col">Tipo de Produto</th>
+                  <th scope="col">Produto</th>
+                  <th scope="col">Preço</th>
+                  <th scope="col">Quantidade em estoque</th>
+
+                  
+                  
+                </tr>
+              </thead>
+              <tbody id="myTable">
+                <tr>
+                  <td>AAAA</td>
+                  <th scope="row">93dhw</th>
+                  <td>Cerveja</td>
+                  <td>Skol</td>
+                  <td>R$: 10,00</td>
+                  <td>100</td>
+
+                </tr>
+                <tr>
+                  <td>BBBBB</td>
+                  <th scope="row">123456</th>
+                  <td>Refrigerante</td>
+                  <td>Dolly</td>
+                  <td>R$: 5,00 </td>
+                  <td>190</td>
+
+                </tr>
+                <tr>
+                  <td>CCCC</td>
+                  <th scope="row">876687</th>
+                  <td>Refrigerante</td>
+                  <td>Cola - Cola</td>
+                  <td>RS: 10,00</td>
+                  <td>200</td>
+                </tr>
+                <tr>
+                  <td>DDDDD</td>
+                  <th scope="row">244467</th>
+                  <td>Sucos</td>
+                  <td>Suco MID Limão</td>
+                  <td>R$: 1,00</td>
+                  <td>120</td>
+                </tr>
+                <tr>
+                  <td>AAAA</td>
+                  <th scope="row">8dm373</th>
+                  <td>Vinhos</td>
+                  <td>Vinhos Tintos</td>
+                  <td>R$: 22,00</td>
+                  <td>100</td>
+
+                </tr>
+                <tr>
+                  <td>FFFFF</td>
+                  <th scope="row">346789</th>
+                  <td>Café</td>
+                  <td>Café Pilão</td>
+                  <td>R$: 5,00</td>
+                  <td>100</td>
+
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane fade" id="pills-feira" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <p><H4>Filtro de Pesquisa </H4></p>  
+            <input class="form-control" id="myInput" type="text" placeholder="Search..">
+            <br>
+            <a href="#">
+              <span class="glyphicon glyphicon-plus"></span> Adicionar
+            </a> &nbsp;&nbsp;
+            <a href="#">
+              <span class="glyphicon glyphicon-minus"></span> Remover
+            </a> &nbsp;&nbsp;
+            <a href="#">
+              <span class="glyphicon glyphicon-pencil"></span> Editar
+            </a>
+             <br>
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Distribuidora</th>
+                  <th scope="col">Código do Produto</th>
+                  <th scope="col">Tipo de Produto</th>
+                  <th scope="col">Produto</th>
+                  <th scope="col">Preço</th>
+                  <th scope="col">Quantidade em Estoque</th>
+
+                  
+                  
+                </tr>
+              </thead>
+              <tbody id="myTable">
+                <tr>
+                  <td>AAAA</td>
+                  <th scope="row">098786</th>
+                  <td>Legumes</td>
+                  <td>Batata</td>
+                  <td>R$: 10,00</td>
+                  <td>50</td>
+
+                </tr>
+                <tr>
+                  <td>BBBBB</td>
+                  <th scope="row">123456</th>
+                  <td>Fruta</td>
+                  <td>Maçã</td>
+                  <td>R$: 9,00 </td>
+                  <td>10</td>
+
+                </tr>
+                <tr>
+                  <td>CCCC</td>
+                  <th scope="row">876687</th>
+                  <td>Legumes</td>
+                  <td>Alface</td>
+                  <td>RS: 14,00</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <td>DDDDD</td>
+                  <th scope="row">244467</th>
+                  <td>Tempero</td>
+                  <td>Orégano</td>
+                  <td>R$: 12,00</td>
+                  <td>90</td>
+                </tr>
+                <tr>
+                  <td>AAAA</td>
+                  <th scope="row">8dm373</th>
+                  <td>Fruta</td>
+                  <td> Laranja</td>
+                  <td>R$: 12,00</td>
+                  <td>17</td>
+                </tr>
+            </table>
+          </div>
+          <div class="tab-pane fade" id="pills-limpeza" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <p><H4>Filtro de Pesquisa </H4></p>  
+            <input class="form-control" id="myInput" type="text" placeholder="Search..">
+            <br>
+            <a href="#">
+              <span class="glyphicon glyphicon-plus"></span> Adicionar
+            </a> &nbsp;&nbsp;
+            <a href="#">
+              <span class="glyphicon glyphicon-minus"></span> Remover
+            </a> &nbsp;&nbsp;
+            <a href="#">
+              <span class="glyphicon glyphicon-pencil"></span> Editar
+            </a>
+             <br>
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Distribuidora</th>
+                  <th scope="col">Código do Produto</th>
+                  <th scope="col">Tipo de Produto</th>
+                  <th scope="col">Produto</th>
+                  <th scope="col">Preço</th>
+                  <th scope="col">Quantidade em Estoque</th>
+
+                  
+                  
+                </tr>
+              </thead>
+              <tbody id="myTable">
+                <tr>
+                  <td>AAAA</td>
+                  <th scope="row">098786</th>
+                  <td>Sabão em Pó</td>
+                  <td>Sabão OMO</td>
+                  <td>R$: 15,00</td>
+                  <td>30</td>
+                  
+
+                </tr>
+                <tr>
+                  <td>BBBBB</td>
+                  <th scope="row">123456</th>
+                  <td>Sabão em Pó</td>
+                  <td>Tixan</td>
+                  <td>R$: 10,00 </td>
+                  <td>30</td>
+
+                  
+                </tr>
+                <tr>
+                  <td>CCCC</td>
+                  <th scope="row">876687</th>
+                  <td>Desifetante</td>
+                  <td>Veja</td>
+                  <td>R$: 14,50</td>
+                  <td>47</td>
+
+
+                </tr>
+                <tr>
+                  <td>DDDDD</td>
+                  <th scope="row">244467</th>
+                  <td>Detergente</td>
+                  <td>YPE</td>
+                  <td>R$: 1,20</td>
+                  <td>76</td>
+                </tr>
+            </table>
+          </div>
+          <div class="tab-pane fade" id="pills-perfumaria" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <p><H4>Filtro de Pesquisa </H4></p>  
+            <input class="form-control" id="myInput" type="text" placeholder="Search..">
+            <br>
+            <a href="#">
+              <span class="glyphicon glyphicon-plus"></span> Adicionar
+            </a> &nbsp;&nbsp;
+            <a href="#">
+              <span class="glyphicon glyphicon-minus"></span> Remover
+            </a> &nbsp;&nbsp;
+            <a href="#">
+              <span class="glyphicon glyphicon-pencil"></span> Editar
+            </a>
+             <br>
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Distribuidora</th>
+                  <th scope="col">Código do Produto</th>
+                  <th scope="col">Tipo de Produto</th>
+                  <th scope="col">Produto</th>
+                  <th scope="col">Preço</th>
+                  <th scope="col">Quantidade em Estoque</th>
+
+                  
+                </tr>
+              </thead>
+              <tbody id="myTable">
+                <tr>
+                  <td>AAAA</td>
+                  <th scope="row">098786</th>
+                  <td>Perfume</td>
+                  <td>Malbec</td>
+                  <td>R$: 140,00</td>
+                  <td>4</td>
+
+                </tr>
+                <tr>
+                  <td>BBBBB</td>
+                  <th scope="row">123456</th>
+                  <td>Desodorante</td>
+                  <td>Rexona</td>
+                  <td>R$: 12,00</td>
+                  <td>70</td>
+
+                </tr>
+                <tr>
+                  <td>CCCC</td>
+                  <th scope="row">876687</th>
+                  <td>shamppo</td>
+                  <td>Jonhsons</td>
+                  <td>R$: 30,00</td>
+                  <td>170</td>
+
+                </tr>
+                <tr>
+                  <td>DDDDD</td>
+                  <th scope="row">244467</th>
+                  <td>Talco</td>
+                  <td>Tenis Pé Baruél</td>
+                  <td>R$: 12,00</td>
+                  <td>40</td>
+                </tr>
+                
+                
+                  <td>FFFFF</td>
+                  <th scope="row">346789</th>
+                  <td>Talco</td>
+                  <td>Tenis pé Jonhsons</td>
+                  <td>R$: 6,00</td>
+                  <td>200</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane fade" id="pills-mercearia" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <p><H4>Filtro de Pesquisa </H4></p>  
+            <input class="form-control" id="myInput" type="text" placeholder="Search..">
+            <br>
+            <a href="#">
+              <span class="glyphicon glyphicon-plus"></span> Adicionar
+            </a> &nbsp;&nbsp;
+            <a href="#">
+              <span class="glyphicon glyphicon-minus"></span> Remover
+            </a> &nbsp;&nbsp;
+            <a href="#">
+              <span class="glyphicon glyphicon-pencil"></span> Editar
+            </a>
+             <br>
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Distribuidora</th>
+                  <th scope="col">Código do Produto</th>
+                  <th scope="col">Tipo de Produto</th>
+                  <th scope="col">Produto</th>
+                  <th scope="col">Preço</th>
+                  <th scope="col">Quantidade em Estoque</th>
+
+                  
+                  
+                </tr>
+              </thead>
+              <tbody id="myTable">
+                <tr>
+                  <td>AAAA</td>
+                  <th scope="row">098786</th>
+                  <td>Biscoito</td>
+                  <td>Passatempo</td>
+                  <td>R$: 3,00</td>
+                  <td>90</td>
+                </tr>
+                <tr>
+                  <td>BBBBB</td>
+                  <th scope="row">123456</th>
+                  <td>Bolacha</td>
+                  <td>Duchen</td>
+                  <td>R$: 2,90</td>
+                  <td>180</td>
+                </tr>
+                <tr>
+                  <td>CCCC</td>
+                  <th scope="row">876687</th>
+                  <td>Bolacha</td>
+                  <td>Folhata</td>
+                  <td>RS: 1,90</td>
+                  <td>130</td>
+
+                </tr>
+                <tr>
+                  <td>DDDDD</td>
+                  <th scope="row">244467</th>
+                  <td>Salgadinho</td>
+                  <td>Fofura</td>
+                  <td>R$: 4,00</td>
+                  <td>100</td>
+
+                </tr>
+                <tr>
+                  <td>AAAA</td>
+                  <th scope="row">8dm373</th>
+                  <td>Biscoito</td>
+                  <td>Cookie</td>
+                  <td>39,10</td>
+                  <td>29</td>
+                </tr>
+                <tr>
+                  <td>FFFFF</td>
+                  <th scope="row">346789</th>
+                  <td>Cereal</td>
+                  <td>Sucrilhos Kelogg</td>
+                  <td>R$: 15,00</td>
+                  <td>60</td>
+                </tr>
+              </tbody>
+            
+            </table>
+          </div>
+
+
+    </div>
+
+  </div>
+      <script>
+        $(document).ready(function(){
+          $("#myInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function() {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+          });
+        });
+        </script>
+      
+      
+       
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  
+  
+  
+    <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="node_modules/mdbootstrap/js/jquery.min.js"></script>
+      <script type="text/javascript" src="node_modules/mdbootstrap/js/popper.min.js"></script>
+      <script type="text/javascript" src="node_modules/mdbootstrap/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="node_modules/mdbootstrap/js/mdb.min.js"></script>
+    </body>
+  </html>

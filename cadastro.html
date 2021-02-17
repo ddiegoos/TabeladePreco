@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+   <!--icone no navegador -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<link rel="stylesheet" href="node_modules/mdbootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
+<link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
+
+<title>Cadastrar</title>
+<style>
+   body, html {
+    background: linear-gradient(to bottom, rgb(83, 31, 31), rgb(55, 59, 114));
+
+        }
+        div {
+          color: black;
+          font-family: 'Times New Roman', Times, serif;
+        }
+        h1 {
+          color: rgb(56, 83, 204);
+          text-align: center;
+          font-family:Georgia, 'Times New Roman', Times, serif;
+          font-size: 50px;
+        }
+</style>
+
+</head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Nome da Empresa</a>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Login </a></li>
+              </ul>
+
+              <ul class="nav nav-tabs">
+                <li><a href="#"> <h5> Sobre Nós </h5> </a></li>
+                <li><a href="#"> <h5> Portal RH</h5> </a></li>
+                <li><a href="#"> <h5> Vagas </h5></a></li>
+                <li><a href="#"> <h5> Produtos </h5></a></li>
+              </ul>
+        
+        </div>
+      </nav>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h1>Preencha o Formulario</h1>
+      <br>
+      <br>
+      <br>
+      <div class="container">
+        <div class="card" >
+          <div class="card-body" >
+            
+      <form>
+        <div class="form-group row">
+          <label for="inputNome" class="col-sm-0 col-form-label"> &nbsp;&nbsp;&nbsp; *Nome Completo: </label>
+          <div class="col-xs-4">
+            <input type="email" class="form-control" id="inputEmail3">
+          </div>
+          <label for="inputEmail4" class="col-sm-0 col-form-label"> &nbsp;&nbsp;&nbsp; *E-mail </label>
+          <div class="col-xs-4">
+            <input type="email" class="form-control" id="inputEmail3">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputdate" class="col-sm-0 col-form-label"> &nbsp;&nbsp;&nbsp;*Data de Nascimento</label>
+          <div class="col-xs-2">
+            <input type="date" class="form-control" id="data-target">
+          </div>
+          <div class="form-check form-check-inline"> 
+            <label for="inputDoc" class="col-sm-0 col-form-label"> &nbsp;&nbsp;&nbsp;&nbsp;*Nascionalidade: &nbsp;&nbsp;</label>
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">Brasileira</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">Estrangeira</label>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputDoc" class="col-sm-0 col-form-label"> &nbsp;&nbsp;&nbsp;*CPF: </label>
+          <div class="col-xs-2">
+            <input type="text" class="form-control cpf-mask" placeholder="Ex.: 000.000.000-00" maxlength="14" cpf-mask="000.000.000-00">
+          </div>
+        <label for="inputDoc" class="col-sm-0 col-form-label"> &nbsp;&nbsp;&nbsp;&nbsp;*RG: </label>
+          <div class="col-xs-2">
+            <input type="text" class="form-control rg-mask" placeholder="Ex.: 000.000.000-0" maxlength="10" cpf-mask="000.000.000-0">
+          </div>
+          <label for="inputDoc" class="col-sm-0 col-form-label"> &nbsp;&nbsp;*Estado do Emissor:&nbsp;&nbsp;</label>
+                    <select id="Estado do Emissor" name="Estado do Emissor" class="validate[required]">
+                        <option value="">Selecione</option>
+                        <option value='AC'>Acre</option>
+                        <option value='AL'>Alagoas</option>
+                        <option value='AM'>Amazonas</option>
+                        <option value='AP'>Amapá</option>
+                        <option value='BA'>Bahia</option>
+                        <option value='CE'>Ceará</option>
+                        <option value='DF'>Distrito Federal</option>
+                        <option value='ES'>Espírito Santo</option>
+                        <option value='GO'>Goiás</option>
+                        <option value='MA'>Maranhão</option>
+                        <option value='MG'>Minas Gerais</option>
+                        <option value='MS'>Mato Grosso do Sul</option>
+                        <option value='MT'>Mato Grosso</option>
+                        <option value='PA'>Pará</option>
+                        <option value='PB'>Paraíba</option>
+                        <option value='PE'>Pernambuco</option>
+                        <option value='PI'>Piauí</option>
+                        <option value='PR'>Paraná</option>
+                        <option value='RJ'>Rio de Janeiro</option>
+                        <option value='RN'>Rio Grande do Norte</option>
+                        <option value='RO'>Rondonia</option>
+                        <option value='RR'>Roraima</option>
+                        <option value='RS'>Rio Grande do Sul</option>
+                        <option value='SC'>Santa Catarina</option>
+                        <option value='SE'>Sergipe</option>
+                        <option value='SP'>São Paulo</option>
+                        <option value='TO'>Tocantins</option>
+                    </select>
+          <label for="inputdate" class="col-sm-0 col-form-label"> &nbsp;&nbsp;&nbsp;&nbsp;*Data de Emissão</label>
+          <div class="col-xs-2">
+            <input type="date" class="form-control" id="data-target">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-2">
+            <label for="inputCity">*Endereços</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-1">
+            <label for="inputCity">*Numero</label>
+            <input type="text" class="form-control" id="inputCity" maxlength="0000">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputCity">Complemento</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputCity">*Cidade</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputState">*Estado</label>
+            <select id="inputState" class="form-control">
+              <option selected>Selecione</option>
+              <option value='AC'>Acre</option>
+              <option value='AL'>Alagoas</option>
+              <option value='AM'>Amazonas</option>
+              <option value='AP'>Amapá</option>
+              <option value='BA'>Bahia</option>
+              <option value='CE'>Ceará</option>
+              <option value='DF'>Distrito Federal</option>
+              <option value='ES'>Espírito Santo</option>
+              <option value='GO'>Goiás</option>
+              <option value='MA'>Maranhão</option>
+              <option value='MG'>Minas Gerais</option>
+              <option value='MS'>Mato Grosso do Sul</option>
+              <option value='MT'>Mato Grosso</option>
+              <option value='PA'>Pará</option>
+              <option value='PB'>Paraíba</option>
+              <option value='PE'>Pernambuco</option>
+              <option value='PI'>Piauí</option>
+              <option value='PR'>Paraná</option>
+              <option value='RJ'>Rio de Janeiro</option>
+              <option value='RN'>Rio Grande do Norte</option>
+              <option value='RO'>Rondonia</option>
+              <option value='RR'>Roraima</option>
+              <option value='RS'>Rio Grande do Sul</option>
+              <option value='SC'>Santa Catarina</option>
+              <option value='SE'>Sergipe</option>
+              <option value='SP'>São Paulo</option>
+              <option value='TO'>Tocantins</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">*CEP</label>
+            <input type="text" class="form-control" id="inputZip" placeholder="Ex.: 00000-000" maxlength="9">
+          </div>
+        </div>
+        <div class="form-group row">
+        <div class="form-group col-md-2">
+          <label for="inputUser"> Usuario</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputSenha">Senha</label>
+          <input type="password" class="form-control" id="inputPassword4">
+        </div>
+      </div>   
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+        Cadastrar
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Termos de Condições</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                    Quais informações você coleta: endereços de e-mail ou informações como telefones, endereços, números de cartões de créditos ou CPFs. <br>
+                    Descreva de que maneira cada informação coletada será utilizada, sejam os dados via formulário, como os dados de navegação. <br>
+                    Comunique caso você revele as informações coletadas a outros: por exemplo, se você usar uma transportadora para quem fornecerá as <br>
+                    informações do cliente, precisará mencionar esse ponto na Política de Privacidade.Informe a possibilidade de alterar a política quando quiser. <br>
+                    Cláusula de cookies: alerte o usuário para a utilização de cookies e web beacons em seu site. Avise sobre a possibilidade de navegar de forma <br>
+                    anônima em seu site, para que as ações do usuário não sejam identificadas por cookies ou beacons. Informações de contato para os usuários que <br>
+                    tiverem dúvidas ou preocupações quanto à privacidade. Cláusulas para o caso de sites para menores de idade: se o seu site atende aos menores, <br>
+                    você precisa aprender as regras de privacidade específicas para crianças e adolescentes.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary">Aceitar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </form>
+    
+    </div>
+      
+       
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+
+
+       <!-- Footer -->
+<footer class="page-footer font-small stylish-color-dark pt-4">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-4 mx-auto">
+  
+          <!-- Content -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Footer Content</h5>
+          <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+            consectetur
+            adipisicing elit.</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Link 1</a>
+            </li>
+            <li>
+              <a href="#!">Link 2</a>
+            </li>
+            <li>
+              <a href="#!">Link 3</a>
+            </li>
+            <li>
+              <a href="#!">Link 4</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Link 1</a>
+            </li>
+            <li>
+              <a href="#!">Link 2</a>
+            </li>
+            <li>
+              <a href="#!">Link 3</a>
+            </li>
+            <li>
+              <a href="#!">Link 4</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Link 1</a>
+            </li>
+            <li>
+              <a href="#!">Link 2</a>
+            </li>
+            <li>
+              <a href="#!">Link 3</a>
+            </li>
+            <li>
+              <a href="#!">Link 4</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <hr>
+  
+    <!-- Call to action -->
+    <ul class="list-unstyled list-inline text-center py-2">
+      <li class="list-inline-item">
+        <h5 class="mb-1">Register for free</h5>
+      </li>
+      <li class="list-inline-item">
+        <a href="#!" class="btn btn-danger btn-rounded">Sign up!</a>
+      </li>
+    </ul>
+    <!-- Call to action -->
+  
+    <hr>
+  
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a class="btn-floating btn-fb mx-1">
+          <i class="fab fa-facebook-f"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-tw mx-1">
+          <i class="fab fa-twitter"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-gplus mx-1">
+          <i class="fab fa-google-plus-g"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-li mx-1">
+          <i class="fab fa-linkedin-in"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-dribbble mx-1">
+          <i class="fab fa-dribbble"> </i>
+        </a>
+      </li>
+    </ul>
+    <!-- Social buttons -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+  
+  
+  
+    <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="node_modules/mdbootstrap/js/jquery.min.js"></script>
+      <script type="text/javascript" src="node_modules/mdbootstrap/js/popper.min.js"></script>
+      <script type="text/javascript" src="node_modules/mdbootstrap/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="node_modules/mdbootstrap/js/mdb.min.js"></script>
+    </body>
+  </html>
